@@ -23,7 +23,7 @@ class SpreadSheetDB():
         1. Create SpreadSheet
         2. Create Sheet
         3. Enter Columns at First row like this:
-            index	name	phone	email
+            index	name	phone_number	email
 
         Parameters
         ----------
@@ -70,7 +70,7 @@ class SpreadSheetDB():
         Examples
         --------
         >>> # This code insert data to the table.
-        >>> sdb.insert({"name": "Park", "phone": "01022223333", "email": "Park@google.com"})
+        >>> sdb.insert({"name": "Park", "phone_number": "01022223333", "email": "Park@google.com"})
 
         """
 
@@ -123,11 +123,11 @@ class SpreadSheetDB():
         [{'name': 'Park', 'email': 'Park@google.com'}, {'name': 'Lee', 'email': 'Lee@google.com'}]
 
         >>> sdb.select(sdb.table["name"] == "Park")
-        [{'index': '34', 'name': 'Park', 'phone': '01022223333', 'email': 'Park@google.com'}]
+        [{'index': '34', 'name': 'Park', 'phone_number': '01022223333', 'email': 'Park@google.com'}]
 
         >>> sdb.select(orient="list")
         {'index': ['34', '35', '36'], 'name': ['Park', 'Lee', 'Han'],
-         'phone': ['01022223333', '01055556666', '01077778888'],
+         'phone_number': ['01022223333', '01055556666', '01077778888'],
          'email': ['Park@google.com', 'Lee@google.com', 'Han@google.com']}
 
         """

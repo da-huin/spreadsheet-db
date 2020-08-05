@@ -9,7 +9,7 @@ def long_description():
     return readme
 
 setup(name='spreadsheet_db',
-      version='0.1',
+      version='1.0',
       description='Simply use Google Spreadsheet as DB in Python.',
       long_description=long_description(),
       url='https://github.com/dahuins/spreadsheet_db',
