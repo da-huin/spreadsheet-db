@@ -11,8 +11,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/dahuins/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/dahuins/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/da-huin/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/da-huin/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -173,7 +173,7 @@ Use this function to insert data into the table.
 
 **Parameters**
 
-* `data`: dict
+* `(required) data`: dict
 
     the dict key is column name and the dict value is value. use like this.
 
@@ -200,7 +200,7 @@ Use this function to get data from a table.
 
 **Parameters**
 
-* `condition`: pandas.core.frame.DataFrame
+* `(required) condition`: pandas.core.frame.DataFrame
 
     You can use pandas dataframe indexing like this (sdb is an instnace of this class.):
 
@@ -210,11 +210,11 @@ Use this function to get data from a table.
     sdb.table["name"] == "Park"
     ```
 
-* `columns`: list
+* `columns`: list (default: [])
 
     If you want to select all columns, leave it blank.
 
-* `orient`: str
+* `orient`: str (default: "records")
 
     Between `records` or `list`, You can select the shape of the output value.
 
@@ -250,7 +250,7 @@ Use this function to update table.
 
 **Parameters**
 
-* `condition`: pandas.core.frame.DataFrame
+* `(required) condition`: pandas.core.frame.DataFrame
 
     You can use pandas dataframe indexing like this (sdb is an instnace of this class.):
 
@@ -260,7 +260,7 @@ Use this function to update table.
     sdb.table["name"] == "Park"
     ```
 
-* `data`: dict
+* `(required) data`: dict
 
     the dict key is column name and the dict value is value. use like this.
 
@@ -288,7 +288,7 @@ Use this function to upsert table. Update if condition exists else insert data.
 
 **Parameters**
 
-* `condition`: pandas.core.frame.DataFrame
+* `(required) condition`: pandas.core.frame.DataFrame
     You can use pandas dataframe indexing like this (sdb is an instnace of this class.):
 
     if you want detail, refer to [here](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html).
@@ -297,7 +297,7 @@ Use this function to upsert table. Update if condition exists else insert data.
     sdb.table["name"] == "Park"
     ```
 
-* `data`: dict
+* `(required) data`: dict
     the dict key is column name and the dict value is value. use like this.
 
     ```
@@ -333,7 +333,7 @@ Use this function to delete rows from the table.
 
 **Parameters**
 
-* `condition`: pandas.core.frame.DataFrame
+* `(required) condition`: pandas.core.frame.DataFrame
 
     You can use pandas dataframe indexing like this (sdb is an instnace of this class.):
     
@@ -361,7 +361,7 @@ Use this function to delete rows from the table.
 
 - Title icon made by [Freepik](https://www.flaticon.com/kr/authors/freepik).
 
-- If you have a problem. please make [issue](https://github.com/dahuins/spreadsheet_db/issues).
+- If you have a problem. please make [issue](https://github.com/da-huin/spreadsheet_db/issues).
 
 - Please help develop this project 😀
 
