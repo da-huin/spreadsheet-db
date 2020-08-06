@@ -32,7 +32,13 @@
 
 ## 🧐 About <a name = "about"></a>
 
-This package helps you use Spreadsheet as DB for developers.
+This package helps you use Spreadsheet as DB for developers. You can use following functions (CRUD).
+
+* [SELECT](#select)
+* [INSERT](#insert)
+* [UPDATE](#update)
+* [UPSERT](#upsert)
+* [DELETE](#delete)
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -161,8 +167,7 @@ pip install spreadsheet_db
 
 Please check [Prerequisites](#prerequisites) before starting `Usage`.
 
-
-### 🌱 INSERT
+### 🌱 INSERT <a name="insert"></a>
 
 Use this function to insert data into the table.
 
@@ -189,7 +194,7 @@ Use this function to insert data into the table.
 
 * Index of inserted data: `int`
 
-### 🌱 SELECT
+### 🌱 SELECT <a name="select"></a>
     
 Use this function to get data from a table.
 
@@ -239,7 +244,7 @@ Use this function to get data from a table.
 
 * Result of SELECT: `dict` or `str`
 
-### 🌱 UPDATE
+### 🌱 UPDATE <a name="update"></a>
 
 Use this function to update table.
 
@@ -277,7 +282,7 @@ Use this function to update table.
 
 * Selected Rows through condition: `dict` or `str`
 
-### 🌱 UPSERT
+### 🌱 UPSERT <a name="upsert"></a>
 
 Use this function to upsert table. Update if condition exists else insert data.
 
@@ -322,7 +327,7 @@ Use this function to upsert table. Update if condition exists else insert data.
 * Return when updated: Selected Rows through condition: `dict` or `str`
 * Return when inserted: Index of inserted data: `int`
 
-### 🌱 DELETE
+### 🌱 DELETE <a name="delete"></a>
 
 Use this function to delete rows from the table.
 
