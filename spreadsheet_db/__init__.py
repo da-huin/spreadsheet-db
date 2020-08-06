@@ -211,7 +211,7 @@ class SpreadSheetDB():
         else:
             return self.update(condition, data)
 
-    def delete(self, condition: pd.core.frame.DataFrame):
+    def delete(self, condition: pd.core.frame.DataFrame) -> list:
         """Use this function to delete rows from the table.
         
         Parameters
@@ -236,7 +236,7 @@ class SpreadSheetDB():
         self.table = self.table.drop(
             self.table.index[drop_index]).reset_index(drop=True)
 
-        return drop_index
+        return list(drop_index)
 
     def _allcombinations(self, alphabet, minlen=1, maxlen=None):
         thislen = minlen
@@ -324,10 +324,16 @@ class SpreadSheetDB():
         return result
 
     def _validate(self, data):
+
+        if "index" in data:
+            raise ValueError("index column is not be available to users.")
+
         for key in data:
             if key not in self.table.columns:
                 raise ValueError(
                     f"[{key}] is not in columns. columns is {self.table.columns}")
+
+        
 
     def _make_sheet_row(self, row):
         temp = []
