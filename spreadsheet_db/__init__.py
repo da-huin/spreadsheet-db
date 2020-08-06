@@ -14,37 +14,38 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 
 class SpreadSheetDB():
+    """This class makes spreadsheet as easy to use as DB.
 
+    Getting Started
+    
+    1. Create SpreadSheet
+    2. Create Sheet
+    3. Enter Columns at First row like this:
+        index	name	phone_number	email
+
+    Parameters
+    ----------
+    auth_json: dict
+        Google Service Accounts Private Key JSON
+
+    spreadsheet_id: str
+        SpreadSheet ID to use as DB
+        in following url, the spreadsheet_id is 1c503dSOl7quggZUIV1oCJgGzR8Vz-jfzH5t59bxZXsE
+        `https://docs.google.com/spreadsheets/d/1c503dSOl7quggZUIV1oCJgGzR8Vz-jfzH5t59bxZXsE/edit?usp=sharing`
+
+    sheet_name: str
+        Sheet Name to use as Table
+
+    unique_columns: list
+        INPUT a list of column names to give the UNIQUE option. Duplicate values are not entered for the UNIQUE column.
+
+    Examples
+    --------
+    sdb = SpreadSheetDB(auth_json, "1c503dSOl7quggZUIV1oCJgGzR8Vz-jfzH5t59bxZXsE", "Sheet1", ["email"])
+    """
+    
     def __init__(self, auth_json: dict, spreadsheet_id: str, sheet_name: str, unique_columns: str = []):
-        """This class makes spreadsheet as easy to use as DB.
 
-        Getting Started
-        
-        1. Create SpreadSheet
-        2. Create Sheet
-        3. Enter Columns at First row like this:
-            index	name	phone_number	email
-
-        Parameters
-        ----------
-        auth_json: dict
-            Google Service Accounts Private Key JSON
-
-        spreadsheet_id: str
-            SpreadSheet ID to use as DB
-            in following url, the spreadsheet_id is 1c503dSOl7quggZUIV1oCJgGzR8Vz-jfzH5t59bxZXsE
-            `https://docs.google.com/spreadsheets/d/1c503dSOl7quggZUIV1oCJgGzR8Vz-jfzH5t59bxZXsE/edit?usp=sharing`
-
-        sheet_name: str
-            Sheet Name to use as Table
-
-        unique_columns: list
-            INPUT a list of column names to give the UNIQUE option. Duplicate values are not entered for the UNIQUE column.
-
-        Examples
-        --------
-        sdb = SpreadSheetDB(auth_json, "1c503dSOl7quggZUIV1oCJgGzR8Vz-jfzH5t59bxZXsE", "Sheet1", ["email"])
-        """
 
         self.table = None
 
