@@ -11,8 +11,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/dahuins/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/dahuins/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/da-huin/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/da-huin/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -361,7 +361,7 @@ Use this function to delete rows from the table.
 
 - Title icon made by [Freepik](https://www.flaticon.com/kr/authors/freepik).
 
-- If you have a problem. please make [issue](https://github.com/dahuins/spreadsheet_db/issues).
+- If you have a problem. please make [issue](https://github.com/da-huin/spreadsheet_db/issues).
 
 - Please help develop this project 😀
 
