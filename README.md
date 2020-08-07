@@ -80,7 +80,7 @@ pip install spreadsheet_db
     <img src="./static/create_service_account_2.png" alt="create_service_account_2" width="500"/>
     <img src="./static/create_service_account_3.png" alt="create_service_account_3" width="500"/>
 
-1. Click the `account you just created`, from the `Service Accounts list`.
+1. Click the `account you just created`, from the `Service Accounts`.
 
     <img src="./static/select_just.png" alt="select_just" />
 
