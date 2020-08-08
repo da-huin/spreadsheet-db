@@ -161,7 +161,7 @@ pip install spreadsheet_db
     <spreadsheet_db.SpreadSheetDB object at 0x009EE820>
     ```
 
-1. From now on, you can use the spreadsheet as a DB 🎉
+1. **From now on, you can use the spreadsheet as a DB 🎉**
 
 ## 🎈 Usage <a name="usage"></a>
 
