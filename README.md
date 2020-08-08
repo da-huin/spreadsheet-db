@@ -57,42 +57,42 @@ pip install spreadsheet_db
 
 #### 🌱 (Required) Download Spreadsheet Authentication JSON
 
-1. From [Google Cloud Platform Console](https://console.developers.google.com/project), `create project`, if you already have a project, you can omit it.
+1. **From [Google Cloud Platform Console](https://console.developers.google.com/project), `create project`, if you already have a project, you can omit it.**
 
     ![create_project](./static/create_project.png)
 
 
-1. Enable [Google Drive API](https://developers.google.com/drive/api/v3/enable-drive-api), if is not already enabled.
+1. **Enable [Google Drive API](https://developers.google.com/drive/api/v3/enable-drive-api), if is not already enabled.**
 
     <img src="./static/enable_google_drive.png" alt="enable_google_drive" width="500"/>
 
-1. Enable [Google Sheet API](https://console.developers.google.com/apis/api/sheets.googleapis.com/overview), if is not already enabled.
+1. **Enable [Google Sheet API](https://console.developers.google.com/apis/api/sheets.googleapis.com/overview), if is not already enabled.**
 
     <img src="./static/enable_google_sheet.png" alt="enable_google_sheet" width="500"/>
 
-1. From [Google Credential](https://console.developers.google.com/apis/api/iamcredentials.googleapis.com/credentials) choose `Create credentials` > `Service Account`.
+1. **From [Google Credential](https://console.developers.google.com/apis/api/iamcredentials.googleapis.com/credentials) choose `Create credentials` > `Service Account`.**
 
     ![credentials_service_account](./static/credentials_service_account.png)
 
-1. Fill out the form and click `Create Key`. 
+1. **Fill out the form and click `Create Key`. **
     
     <img src="./static/credentials_service_account_form.png" alt="credentials_service_account_form" width="500"/>
     <img src="./static/create_service_account_2.png" alt="create_service_account_2" width="500"/>
     <img src="./static/create_service_account_3.png" alt="create_service_account_3" width="500"/>
 
-1. Click the `account you just created`, from the `Service Accounts`.
+1. **Click the `account you just created`, from the `Service Accounts`.**
 
     <img src="./static/select_just.png" alt="select_just" />
 
-1. click the `ADD KEY` > `Create new key`
+1. **click the `ADD KEY` > `Create new key`**
 
     ![credential_create_new_key](./static/credential_create_new_key.png)
 
-1. Set the `Key type` to JSON and click `CREATE` button
+1. **Set the `Key type` to JSON and click `CREATE` button**
 
     ![credential_create_new_key_create](./static/credential_create_new_key_create.png)
 
-1. The JSON file automatically saved, which is used to authenticate the spreadsheet.
+1. **The JSON file automatically saved, which is used to authenticate the spreadsheet.**
 
     ![private_key_saved](./static/private_key_saved.png)
 
@@ -101,40 +101,40 @@ pip install spreadsheet_db
 
 `Authentication JSON` is required to create an `instance`. If you have not downloaded the `Authentication JSON`, refer to [here](#auth_json).
 
-1. Create new [Spreadsheet](https://docs.google.com/spreadsheets/u/0/).
+1. **Create new [Spreadsheet](https://docs.google.com/spreadsheets/u/0/).**
 
     ![new_spreadsheet](./static/new_spreadsheet.png)
     
 
-1. Add `Column Names` and remember `Spreadsheet ID`.
+1. **Add `Column Names` and remember `Spreadsheet ID`.**
 
     * `index column` are required!
 
     ![spreadsheet_column_and_id](./static/spreadsheet_column_and_id.png)
 
-1. Change `Sheet1` to the name you want to use. in this package, uses `Sheet` as `Table`. if you want, create a new table.
+1. **Change `Sheet1` to the name you want to use. in this package, uses `Sheet` as `Table`. if you want, create a new table.**
 
     ![sheet_table](./static/sheet_table.png)
 
-1. Click [HERE]([https://console.developers.google.com/apis/api/iamcredentials.googleapis.com/credentials]) to add `spreadsheet authentication`.
+1. **Click [HERE]([https://console.developers.google.com/apis/api/iamcredentials.googleapis.com/credentials]) to add `spreadsheet authentication`.**
 
-1. Copy the e-mail of the authentication you created ealier.
+1. **Copy the e-mail of the authentication you created ealier.**
 
     <img src="./static/select_just.png" alt="select_just" />
 
-1. Comeback Spreadsheet and press `Share` button.
+1. **Comeback Spreadsheet and press `Share` button.**
 
     <img src="./static/share.png" alt="share" />
 
-1. Paste `copied email` and press `Enter Key`.
+1. **Paste `copied email` and press `Enter Key`.**
 
     <img src="./static/share-2.png" alt="share-2" />
 
-1. Click the `Send` button
+1. **Click the `Send` button**
 
     <img src="./static/share-3.png" alt="share-3" />
 
-1. Create an instance using an code below.
+1. **Create an instance using an code below.**
 
     ```python
 
