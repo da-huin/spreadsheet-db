@@ -11,8 +11,8 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/da-huin/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/da-huin/spreadsheet_db.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![GitHub Issues](https://img.shields.io/github/issues/da-huin/spreadsheet_db.svg)](https://github.com/da-huin/spreadsheet_db/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/da-huin/spreadsheet_db.svg)](https://github.com/da-huin/spreadsheet_db/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
