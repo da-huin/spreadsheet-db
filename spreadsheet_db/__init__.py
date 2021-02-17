@@ -49,7 +49,7 @@ class SpreadSheetDB():
         self.table = None
 
         self._spread_order = list(self._allcombinations(
-            'ABCDEFGHIJKLMNOPQRSTVWXYZ', minlen=1, maxlen=2))
+            'ABCDEFGHIJKLMNOPQRSTUVWXYZ', minlen=1, maxlen=3))
         self._doc = self._get_doc(auth_json, spreadsheet_id)
         self._sheet_name = sheet_name
         self._cloudsheet = None

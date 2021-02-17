@@ -6,7 +6,7 @@ import io
 from setuptools import find_packages, setup
 
 setup(name='spreadsheet_db',
-      version='1.2.2',
+      version='1.2.3',
       description='Simply use Google Spreadsheet as DB in Python.',
       long_description="Please refer to the https://github.com/da-huin/spreadsheet_db",
       long_description_content_type="text/markdown",
